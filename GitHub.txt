@@ -1,8 +1,20 @@
-Git init -- 
+1::Git init -- 
 
-git status  --> check  status
+2::git status  --> check  status
 
-git add . --> all file addda
+3::git add . --> all file addda
 
-git add py.py --> single file data
+4::git add py.py --> single file data
+
+5::Git log --> check comments
+Author: jugalNoob <sjugal126@gmail.com>
+Date:   Sat Apr 27 21:12:05 2024 -0700
+
+
+6::git branch --> check branch
+
+7::git diff -->check which code change your file
+
+
+
 
