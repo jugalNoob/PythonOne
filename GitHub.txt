@@ -1,0 +1,8 @@
+Git init -- 
+
+git status  --> check  status
+
+git add . --> all file addda
+
+git add py.py --> single file data
+
