@@ -13,8 +13,63 @@ Date:   Sat Apr 27 21:12:05 2024 -0700
 
 6::git branch --> check branch
 
-7::git diff -->check which code change your file
+7::git diff -->check which code change in your file
+
+8::git diff -->check chnages
+
+8:: git show  14bc23426dc392c6682a5160fb22653041f10e75:py.py --> Important
+
+9::git checkout  14bc23426dc392c6682a5160fb22653041f10e75 --py.py
+
+10::Git checkout 14bc23426dc392c6682a5160fb22653041f10e75 --*
+
+11::git checkout master -- * --> all 
+
+12::git checkout master -- inidex.py
 
 
+
+:::::::::::::: Git Negative  case --> measing add code bad 
+1::If we made any Change by mistake and save it
+Case1:: To Undo Change , get the Last SuccessFuLL Change 
+
+git restore . --> all remove code 
+git restore py.py --> 
+
+2::Case2 if we added the change  using  git add the
+git restore --staged index.html
+git restore  --staged . --> all 
+
+
+3::Case Added Change to staging area (didn't commit) after this added more 
+changes to file
+::to get the Staged Change 
+git restore --worktree index.html
+
+4::case : how about if we did commit also wrong file
+
+git reset --soft HEAD^(uncommit and keep the chnage )
+git reset --hard HEAD^(uncommit and discard the chnage)
+
+
+:::::::::::::: Logging in Git :::::::::::::
+
+1::git log #
+2::git log -p -2 (last two Commit with diff)
+3::git log --stat (summary of Chnages) all shwo changes
+4::git log --pretty=online
+5::git log -S 'h1'
+6::git log --pretty=format:'%h - %an , %ar:%s'
+
+
+|::::::::: Remote Repo  meaing cloud  github 
+
+1:--:GitHub cloud Upload your Project 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jugalNoob/PythonOne.git
+git push -u origin main
 
 
